@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .nav li a:hover {
+        background-color: gray;
+        
+      }
+      
+      .card-body {
+        text-align: left !important;
+      }
+      .number {
+        width: 30px;
+        height: 30px;
+      }
+      .search:hover {
+        background-color: red;
+      }
+      .icon {
+        display: none;
+      }
+      @media screen and (max-width: 760px) {
+        .icon {
+          display: block;
+          
+        }
+       
+
+        .nav {
+          display: none; /* Hide the navigation menu by default */
+        }
+        .search {
+          display: none;
+        }
+
+        .main:hover .nav {
+          display: block;
+          
+        }
+
+        .nav ul {
+          display: flex; 
+          flex-direction: column; 
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background-color: black;
+          z-index: 999;
+          padding: 5px 0;
+        }
+        .nav ul li {
+          padding: 10px 0;
+          color: black;
+          
+        }
+      
+      }
+      .lock{
+        left: 90%;
+        transform: translatex(-90%);
+        font-size: 30px;
+        top: 3px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    
+    <section class="w-100 mb-0 bg-dark">
+      <div class="container-fluid main position-relative">
+        <div class="row  d-flex align-items-center py-2">
+          <div class=" col-10 nav">
+            <ul class="d-flex align-items-center list-unstyled mb-0">
+              <li>
+                <a class="text-white text-decoration-none ms-5" href="#"
+                  >HOME</a
+                >
+              </li>
+              <li>
+                <a class="text-white text-decoration-none ms-5" href="#"
+                  >BAND</a
+                >
+              </li>
+              <li>
+                <a class="text-white text-decoration-none ms-5 " href="#"
+                  >TOUR</a
+                >
+              </li>
+              <li>
+                <a class="text-white text-decoration-none ms-5" href="#"
+                  >CONTACT</a
+                >
+              </li>
+              <li class="d-flex">
+                <a class="text-white text-decoration-none ms-5" href="#">MORE</a
+                ><span class="material-symbols-outlined text-white">
+                  arrow_drop_down
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class=" text-white  col-auto search ms-auto">
+            <span class="material-symbols-outlined"> search </span>
+          </div>
+          <div class="icon text-white col-1 ms-auto">
+            <span class="material-symbols-outlined">menu</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="position-relative">
+      <div>
+        <img
+          src="losangels.jpg "
+          alt=""
+          class="w-100  object-fit-cover"
+        />
+      </div>
+      <div
+        class="position-absolute bottom-0 start-50 text-white translate-middle text-center"
+      >
+        <h3>Los Angels</h3>
+        <p >We had the best time playing at Venice Beach!</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container w-75 m-auto">
+        <div class="my-5">
+          <h2 class="text-center mt-2 mb-3">THE BAND</h2>
+          <p class="text-center mt-2 mb-3 opacity-50">We love music</p>
+          <p class="text-start">
+            We have created a fictional band website. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+        </div>
+        <!-- <div class="d-flex gap-5 justify-content-between text-center mb-5"> -->
+
+        <div class="row row-cols-md-2 row-cols-lg-3  mb-5 text-center g-2">
+          <div class=" col ">
+            <h6 class="mb-3">Name</h6>
+            <img src="bandmember.jpg" alt="" class="mb-3" />
+          </div>
+          <div class=" col">
+            <h6 class="mb-3">Name</h6>
+            <img src="bandmember.jpg" alt="" class="mb-3" />
+          </div>
+          <div class=" col">
+            <h6 class="mb-3">Name</h6>
+            <img src="bandmember.jpg" alt="" class="mb-3" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark text-white text-center py-5">
+      <div class="container w-75 mx-auto">
+        <h2>TOUR DATES</h2>
+        <p>Remember to book your tickets</p>
+        <div class="bg-white text-black text-start mb-5  ">
+          <div class="bg-white border  py-2 ps-2">
+            September<span class="bg-danger px-2  mx-4 text-white "
+              >Sold Out</span>
+          </div>
+          <div class="bg-white border py-2 ps-2">
+            October<span class="bg-danger px-2 mx-4 text-white"
+              >Sold Out</span
+            >
+          </div>
+          <div class="d-flex justify-content-between py-2 border ps-2">
+            <div class="bg-white">November</div>
+            <span
+              class="bg-black text-white number rounded-circle d-flex align-items-center justify-content-center"
+              >3</span
+            >
+          </div>
+        </div>
+
+        <!-- <div class="d-flex gap-3 justify-content-between mt-4">
+            row-cols-sm-2 row-cols-md-3
+        -->
+        <div class="row row-cols-sm-2 row-cols-md-3 row-cols-1 g-3">
+          <div class="col">
+            <div class="card mb-3">
+              <img
+                class="card-img-top"
+                src="newyork.jpg"
+                alt="Card image cap"
+                class="rounded-top w-100"
+              />
+              <div class="card-body">
+                <h5 class="card-title">New York</h5>
+                <p>Fri 27 Nov 2016</p>
+                <p class="card-text">
+                  Praesent tincidunt sed tellus ut rutrum sed vitae
+                  justo.Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                </p>
+                <a
+                  href="#"
+                  class="btn  bg-black text-white border-none"
+                  >Buy Tickets</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3">
+              <img
+                class="card-img-top"
+                src="paris.jpg"
+                alt="Card image cap"
+                class="rounded-top w-100"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Paris</h5>
+                <p>Sat 28 Nov 2016</p>
+                <p class="card-text">
+                  Praesent tincidunt sed tellus ut rutrum sed vitae
+                  justo.Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                </p>
+                <a
+                  href="#"
+                  class="btn  bg-black text-white border-none"
+                  >Buy Tickets</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3">
+              <img
+                class="card-img-top"
+                src="sanfran.jpg"
+                alt="Card image cap"
+                class="rounded-top w-100"
+              />
+              <div class="card-body">
+                <h5 class="card-title">San Francisco</h5>
+                <p>Sun 29 Nov 2016</p>
+                <p class="card-text">
+                  Praesent tincidunt sed tellus ut rutrum sed vitae
+                  justo.Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                </p>
+                <a
+                  href="#"
+                  class="btn  bg-black text-white border-none"
+                  >Buy Tickets</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-5">
+      <div class="container w-75 m-auto">
+        <div class="text-center">
+          <h4 class="display-5">Contact</h4>
+          <p>Fan? Drop a note!</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 mb-3 ">
+          <div class="col ">
+            <div class="d-flex g-0">
+              <span class="material-symbols-outlined me-2">location_on</span>
+              <p>Chicago,US</p>
+            </div>
+
+            <div class="d-flex ">
+              <span class="material-symbols-outlined me-2">call</span>
+              <p>Phone:+00151515</p>
+            </div>
+
+            <div class="d-flex ">
+              <span class="material-symbols-outlined me-2">mail</span>
+              <p>Email: mail@mail.com</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row gy-3 mt-3">
+              <div class="col-6">
+                <input type="text" placeholder="Name" class="w-100 py-1" />
+              </div>
+              <div class="col-6 position-relative ">
+                <input type="email" placeholder="Email" class="w-100 py-1" />
+                <span class="material-symbols-outlined text-danger position-absolute lock ">lock</span> 
+              </div>
+
+              <div class="col ">
+                
+                  <input type="text" placeholder="Message" class="w-100 py-1" />
+                  
+               
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-end">
+          <button class="bg-black text-white px-2 py-1">Send</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div >
+        <img src="map.jpg" alt="" class="w-100" />
+      </div>
+    </section>
+
+    <section>
+      <div class="bg-dark p-3 text-center text-white">
+        <div class="mb-2 container">
+          <img src="/tour/images/icon-facebook.svg" alt="" "> 
+          <img src="/tour/images/icon-instagram.svg" alt="" "> 
+          <img src="/tour/images/icon-pinterest.svg" alt="" "> 
+          <img src="/tour/images/icon-youtube.svg" alt="" "> 
+          <img src="/tour/images/icon-twitter.svg" alt="" ">
+        </div>
+        <div>powered by w3.css</div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
